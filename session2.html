@@ -26,95 +26,91 @@
 
         <header class="session-header">
             <h1>02. EL CONSTRUCTOR (Vibe Coding)</h1>
-            <p>De la idea a la App en minutos, sin tocar una línea de código.</p>
+            <p>Aprende a estructurar tus ideas y a iterar con la IA hasta conseguir una herramienta profesional.</p>
         </header>
 
         <div class="section">
-            <h2>1. ¿Qué es Vibe Coding?</h2>
-            <p>Es programar con intención. Tú defines la lógica y el estilo en lenguaje natural, y la IA escribe el
-                código (HTML/CSS/JS). Tu trabajo es guiar, probar y refinar.</p>
+            <h2>1. El Arte del Prompting Estructurado</h2>
+            <p>No basta con decir "hazme una app". Para que la IA genere código de calidad, debes darle un contexto
+                completo (Rol, Objetivo, Restricciones, Estática).</p>
 
             <div class="step-box">
-                <h3>Herramientas Necesarias (Gratuitas y Web)</h3>
+                <h3>Componentes de una App Web</h3>
                 <ul class="resource-list">
-                    <li><a href="https://aistudio.google.com/" target="_blank" style="color:var(--primary)">Google AI
-                            Studio</a>: El cerebro que genera el código limpio.</li>
-                    <li><a href="https://stackblitz.com/" target="_blank" style="color:var(--primary)">StackBlitz</a>:
-                        El entorno donde "vive" tu app. No requiere instalación.</li>
+                    <li><strong>Estructura (HTML):</strong> El esqueleto de la app (botones, tablas, inputs).</li>
+                    <li><strong>Estilo (CSS):</strong> La estética (colores, sombras, tipografía "Sports Tech").</li>
+                    <li><strong>Lógica (JavaScript):</strong> El cerebro (cálculos de 1RM, lógica de programación de
+                        ciclos).</li>
+                    <li><strong>Persistencia:</strong> Guardar datos en el navegador (LocalStorage) para que no se
+                        pierdan al cerrar.</li>
                 </ul>
             </div>
         </div>
 
         <div class="section">
-            <h2>2. Práctica Guiada: MED Hypertrophy App</h2>
-            <p>Vamos a crear una "Calculadora de Dosis Mínima Efectiva" para hipertrofia. Resuelve el problema de la
-                falta de tiempo.</p>
+            <h2>2. Taller Práctico: App MED Pro</h2>
+            <p>Vamos a llevar la App de Dosis Mínima a un nivel superior, incluyendo análisis de datos.</p>
 
             <div class="step-box">
-                <h3>Paso A: El Prompt Maestro (AI Studio)</h3>
-                <p>Copia y pega esto en Google AI Studio (Modelo: Gemini 1.5 Flash o Pro):</p>
-                <div class="prompt-block">Actúa como un Ingeniero de Software experto y Entrenador de Hipertrofia basado
-                    en evidencia.
-                    Crea una Web App completa en un solo archivo HTML (con CSS y JS embebido) que calcule una rutina de
-                    "Dosis Mínima Efectiva" (MED).
+                <h3>El Mega-Prompt de AI Studio</h3>
+                <div class="prompt-block">Actúa como Full-Stack Developer y Experto en Ciencias del Deporte.
+                    Diseña una Single Page Application (SPA) para "Entrenamiento de Mínima Dosis Efectiva" con estas
+                    características avanzadas:
 
-                    Funcionalidades:
-                    1. Formulario de entrada:
-                    - Días disponibles (1, 2 o 3 días/semana).
-                    - Material disponible (Gimnasio completo, Mancuernas en casa, Peso corporal).
-                    - Grupo muscular prioritario (Torso, Pierna, Full Body).
-                    2. Lógica (basada en evidencia científica):
-                    - Volumen bajo (4-6 series semanales por grupo muscular cerca del fallo).
-                    - Selección de ejercicios multiarticulares eficientes.
-                    3. Salida:
-                    - Tabla con la rutina generada.
-                    - Botón para "Guardar sesión" (simulado en LocalStorage).
-                    - Visualización de progreso simple.
-                    4. Diseño:
-                    - Estética "Sports Tech" oscura (fondo #0f1115, acentos cyan #00f0ff y lima #ccff00).
-                    - Tipografía moderna (Inter/Roboto).
-                    - Responsive (móvil primero).
+                    1. DASHBOARD VISUAL:
+                    - Resumen de grupos musculares trabajados en la semana (usando barras de progreso).
+                    - Contador de series totales por semana.
+                    2. GENERADOR DE RUTINAS:
+                    - Selección de nivel: Principiante (4 series/músculo), Intermedio (6 series), Avanzado (8 series).
+                    - Filtro de material: 'Gym Pro', 'Home Minimalist', 'Bodyweight Only'.
+                    - Lógica: Priorizar ejercicios multiarticulares (Squat, Bench, Row).
+                    3. REGISTRO Y FEEDBACK:
+                    - Formulario para anotar peso y RPE de cada serie.
+                    - Si el RPE es bajo (<7), la app debe sugerir subir el peso la próxima sesión. 4. ESTÉTICA PREMIUM:
+                        - Dark Mode (Fondo: #0b0e11, Tarjetas: #15191e). - Acentos en verde neón (#a3ff00) y blanco
+                        puro. - Animaciones suaves en las transiciones de tarjetas. Todo en un archivo HTML único con JS
+                        modularizado internamente.</div>
+                </div>
 
-                    Genera TODO el código en un único bloque HTML listo para ejecutar.</div>
+                <div class="step-box">
+                    <h3>Iteración Paso a Paso</h3>
+                    <p>Una vez que StackBlitz te muestra la primera versión, no te detengas. Pide mejoras específicas:
+                    </p>
+                    <ul class="resource-list">
+                        <li>"Añade un gráfico de tarta que muestre el reparto de volumen por grupo muscular."</li>
+                        <li>"Crea un botón para exportar el entrenamiento del día a formato PDF o texto."</li>
+                        <li>"Añade un cronómetro de descanso que se active automáticamente al pulsar 'Serie
+                            Completada'."</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="step-box">
-                <h3>Paso B: Despliegue en StackBlitz</h3>
-                <ol class="resource-list">
-                    <li>Ve a StackBlitz y haz clic en "New Project" -> "Frontend" -> "HTML/JS".</li>
-                    <li>Borra todo el contenido de `index.html`.</li>
-                    <li>Pega el código que te dio AI Studio.</li>
-                    <li>¡Listo! Verás tu app funcionando en la ventana derecha.</li>
-                </ol>
+            <div class="section">
+                <h2>3. StackBlitz: Tu Laboratorio</h2>
+                <p>Utiliza la función de 'Hot Reload' de StackBlitz. Cada vez que cambies el código (o que la IA te dé
+                    uno nuevo), la web se actualizará al instante. Es la forma más rápida de aprender viendo qué hace
+                    cada parte del código.</p>
             </div>
 
-            <div class="step-box">
-                <h3>Paso C: Iteración (Refinar)</h3>
-                <p>¿No te gusta el color? ¿Falta un ejercicio? Vuelve a AI Studio y dile:</p>
-                <div class="prompt-block">Cambia el color de fondo de las tarjetas a gris oscuro y añade una explicación
-                    de "RPE" (Esfuerzo Percibido) debajo de la tabla.</div>
+            <div class="section">
+                <h2>3. Tu Turno (Dojo)</h2>
+                <p>Ahora crea una herramienta para TU interés deportivo. Ideas:</p>
+                <ul class="resource-list">
+                    <li>Calculadora de Ritmos de Carrera (Paso/km).</li>
+                    <li>Buscador de Sustitutos de Alimentos por Macros.</li>
+                    <li>Cronómetro para intervalos Tabata configurable.</li>
+                    <li>Test de Valoración Funcional (FMS) con checkbox.</li>
+                </ul>
             </div>
-        </div>
 
-        <div class="section">
-            <h2>3. Tu Turno (Dojo)</h2>
-            <p>Ahora crea una herramienta para TU interés deportivo. Ideas:</p>
-            <ul class="resource-list">
-                <li>Calculadora de Ritmos de Carrera (Paso/km).</li>
-                <li>Buscador de Sustitutos de Alimentos por Macros.</li>
-                <li>Cronómetro para intervalos Tabata configurable.</li>
-                <li>Test de Valoración Funcional (FMS) con checkbox.</li>
-            </ul>
-        </div>
+            <div class="section">
+                <a href="session3.html" class="btn">SIGUIENTE: PUBLICAR Y NEGOCIO →</a>
+            </div>
 
-        <div class="section">
-            <a href="session3.html" class="btn">SIGUIENTE: PUBLICAR Y NEGOCIO →</a>
+            <footer>
+                <p>Curso de Digitalización - FP Acondicionamiento Físico</p>
+            </footer>
         </div>
-
-        <footer>
-            <p>Curso de Digitalización - FP Acondicionamiento Físico</p>
-        </footer>
-    </div>
 </body>
 
 </html>
