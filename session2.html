@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 02: Creación de Apps | IA Sport</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Roboto:wght@300;400;500&family=Fira+Code&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span>⚡</span> IA: SPORT SCIENCE
+            </a>
+            <div class="nav-links">
+                <a href="session1.html">01. INVESTIGACIÓN</a>
+                <a href="session2.html" class="active">02. CREACIÓN</a>
+                <a href="session3.html">03. NEGOCIO</a>
+            </div>
+        </nav>
+
+        <header class="session-header">
+            <h1>02. EL CONSTRUCTOR (Vibe Coding)</h1>
+            <p>De la idea a la App en minutos, sin tocar una línea de código.</p>
+        </header>
+
+        <div class="section">
+            <h2>1. ¿Qué es Vibe Coding?</h2>
+            <p>Es programar con intención. Tú defines la lógica y el estilo en lenguaje natural, y la IA escribe el
+                código (HTML/CSS/JS). Tu trabajo es guiar, probar y refinar.</p>
+
+            <div class="step-box">
+                <h3>Herramientas Necesarias (Gratuitas y Web)</h3>
+                <ul class="resource-list">
+                    <li><a href="https://aistudio.google.com/" target="_blank" style="color:var(--primary)">Google AI
+                            Studio</a>: El cerebro que genera el código limpio.</li>
+                    <li><a href="https://stackblitz.com/" target="_blank" style="color:var(--primary)">StackBlitz</a>:
+                        El entorno donde "vive" tu app. No requiere instalación.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Práctica Guiada: MED Hypertrophy App</h2>
+            <p>Vamos a crear una "Calculadora de Dosis Mínima Efectiva" para hipertrofia. Resuelve el problema de la
+                falta de tiempo.</p>
+
+            <div class="step-box">
+                <h3>Paso A: El Prompt Maestro (AI Studio)</h3>
+                <p>Copia y pega esto en Google AI Studio (Modelo: Gemini 1.5 Flash o Pro):</p>
+                <div class="prompt-block">Actúa como un Ingeniero de Software experto y Entrenador de Hipertrofia basado
+                    en evidencia.
+                    Crea una Web App completa en un solo archivo HTML (con CSS y JS embebido) que calcule una rutina de
+                    "Dosis Mínima Efectiva" (MED).
+
+                    Funcionalidades:
+                    1. Formulario de entrada:
+                    - Días disponibles (1, 2 o 3 días/semana).
+                    - Material disponible (Gimnasio completo, Mancuernas en casa, Peso corporal).
+                    - Grupo muscular prioritario (Torso, Pierna, Full Body).
+                    2. Lógica (basada en evidencia científica):
+                    - Volumen bajo (4-6 series semanales por grupo muscular cerca del fallo).
+                    - Selección de ejercicios multiarticulares eficientes.
+                    3. Salida:
+                    - Tabla con la rutina generada.
+                    - Botón para "Guardar sesión" (simulado en LocalStorage).
+                    - Visualización de progreso simple.
+                    4. Diseño:
+                    - Estética "Sports Tech" oscura (fondo #0f1115, acentos cyan #00f0ff y lima #ccff00).
+                    - Tipografía moderna (Inter/Roboto).
+                    - Responsive (móvil primero).
+
+                    Genera TODO el código en un único bloque HTML listo para ejecutar.</div>
+            </div>
+
+            <div class="step-box">
+                <h3>Paso B: Despliegue en StackBlitz</h3>
+                <ol class="resource-list">
+                    <li>Ve a StackBlitz y haz clic en "New Project" -> "Frontend" -> "HTML/JS".</li>
+                    <li>Borra todo el contenido de `index.html`.</li>
+                    <li>Pega el código que te dio AI Studio.</li>
+                    <li>¡Listo! Verás tu app funcionando en la ventana derecha.</li>
+                </ol>
+            </div>
+
+            <div class="step-box">
+                <h3>Paso C: Iteración (Refinar)</h3>
+                <p>¿No te gusta el color? ¿Falta un ejercicio? Vuelve a AI Studio y dile:</p>
+                <div class="prompt-block">Cambia el color de fondo de las tarjetas a gris oscuro y añade una explicación
+                    de "RPE" (Esfuerzo Percibido) debajo de la tabla.</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Tu Turno (Dojo)</h2>
+            <p>Ahora crea una herramienta para TU interés deportivo. Ideas:</p>
+            <ul class="resource-list">
+                <li>Calculadora de Ritmos de Carrera (Paso/km).</li>
+                <li>Buscador de Sustitutos de Alimentos por Macros.</li>
+                <li>Cronómetro para intervalos Tabata configurable.</li>
+                <li>Test de Valoración Funcional (FMS) con checkbox.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <a href="session3.html" class="btn">SIGUIENTE: PUBLICAR Y NEGOCIO →</a>
+        </div>
+
+        <footer>
+            <p>Curso de Digitalización - FP Acondicionamiento Físico</p>
+        </footer>
+    </div>
+</body>
+
+</html>
